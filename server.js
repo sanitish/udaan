@@ -34,7 +34,7 @@ const workers = require('./routes/worker');
 
 
 var mongoose = require('mongoose');
-const db = "mongodb+srv://nitish:sanitsum@cluster0-fjp4h.mongodb.net/test?retryWrites=true&w=majority";
+const db = "mongodb+srv://nitish:sanitsum@cluster0-fjp4h.mongodb.net/stayspace_prod?retryWrites=true";
 
 
 // Connect to MongoDB
