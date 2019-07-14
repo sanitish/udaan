@@ -48,16 +48,3 @@ exports.addTask = function(req, res, next) {
   })
 }
 }
-
-// exports.getTasks = function(req, res, next) {
-//   Assets.find({
-//     })
-//     .then((assets) => {
-//
-//       res.json({
-//         assets
-//       });
-//     }).catch((err) => {
-//       next(err)
-//     })
-// }

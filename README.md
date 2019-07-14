@@ -13,18 +13,24 @@ Install the dependencies
 $ npm install
 ```
 
-##added ssh key
+### Run
 
 
-## aws
+```sh
+$ node server.js || nodemon
+```
+
+
+## localhost
+
+8080
 
 ### Author
-Nitish Kumar
-
+Prateek kushwaha
 ### Version
 
 1.0.0
 
 ### License
- 
+
 This project is licensed under the MIT License

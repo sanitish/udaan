@@ -3,7 +3,7 @@ const router = express.Router();
 
 const tasks = require('../controllers/tasks');
 
-router.post('/add-task',tasks.addTask);
+router.post('',tasks.addTask);
 
 
 module.exports = router;

@@ -2,10 +2,7 @@ const mongoose = require('mongoose');
 var moment = require('moment');
 
 const Worker = require('../models/workers');
-// const Owner = require('../models/owner');
-// const Users = require('../models/users');
-// const Buildings = require('../models/buildings');
-
+const AllocateTasks= require('../models/allocate_task');
 
 
 exports.addWorker = function(req, res, next) {
@@ -49,15 +46,18 @@ exports.addWorker = function(req, res, next) {
 }
 }
 
-// exports.getTasks = function(req, res, next) {
-//   Assets.find({
-//     })
-//     .then((assets) => {
-//
-//       res.json({
-//         assets
-//       });
-//     }).catch((err) => {
-//       next(err)
-//     })
-// }
+
+
+ exports.getTaskForWorker = function(req, res, next) {
+   console.log(req.parames);
+  AllocateTasks.find({
+    workerId:req.parames.id
+    })
+    .then((tasks) => {
+      res.json({
+        tasks
+      });
+    }).catch((err) => {
+      next(err)
+    })
+}

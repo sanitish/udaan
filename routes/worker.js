@@ -5,8 +5,7 @@ const router = express.Router();
 const worker = require('../controllers/workers');
 // Load User Model
 
-
-router.post('/addWorker', worker.addWorker);
-
+router.post('', worker.addWorker);
+router.post('/:?', worker.getTaskForWorker);
 
 module.exports = router;

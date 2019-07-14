@@ -3,7 +3,7 @@ const router = express.Router();
 
 const allocateTask = require('../controllers/allocateTask');
 
-router.post('/allocateTask',allocateTask.allocateTask);
+router.post('/',allocateTask.allocateTask);
  router.get('/getDetailsToAllocateTask', allocateTask.getDetailsToAllocateTask);
 
 

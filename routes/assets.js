@@ -3,7 +3,7 @@ const router = express.Router();
 
 const assets = require('../controllers/assets');
 
-router.post('/add-asset',assets.addAsset);
- router.get('/getAssets', assets.getAssets);
+router.post('',assets.addAsset);
+ router.get('/all', assets.getAssets);
 
 module.exports = router;

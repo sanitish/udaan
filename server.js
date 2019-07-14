@@ -46,10 +46,11 @@ mongoose
 app.use(express.static('public'));
 
 //load routes
-app.use('/workers', workers);
- app.use('/tasks', tasks);
+app.use('/add-worker', workers);
+ app.use('/add-task', tasks);
+ app.use('/add-asset', assets);
 app.use('/assets', assets);
-app.use('/allocateTask', allocateTask);
+app.use('/allocate-task', allocateTask);
 
 
 app.use((err , req,res , next)=>{
