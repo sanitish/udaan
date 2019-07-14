@@ -117,3 +117,19 @@ nil
 **timeOfAllocation** type: String
 
 **taskToBePerfomedBy** type: String
+
+
+###Dev
+### Installation
+
+Install the dependencies
+
+```sh
+$ npm install
+```
+
+To start Server
+
+```sh
+$ node server.js
+```
