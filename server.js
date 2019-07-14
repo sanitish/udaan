@@ -47,7 +47,7 @@ app.use(express.static('public'));
 
 //load routes
 app.use('/add-worker', workers);
-app.use('/get-tasks-for-worker', workers);
+app.use('/get-tasks-for-worker/:id', workers);
 
  app.use('/add-task', tasks);
  app.use('/add-asset', assets);

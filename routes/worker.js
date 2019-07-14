@@ -6,6 +6,6 @@ const worker = require('../controllers/workers');
 // Load User Model
 
 router.post('', worker.addWorker);
-router.post('/:id', worker.getTaskForWorker);
+router.get('', worker.getTaskForWorker);
 
 module.exports = router;
