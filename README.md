@@ -1,22 +1,6 @@
 # Housekeeping-backend
 
 
-### Installation
-
-Install the dependencies
-
-```sh
-$ npm install
-```
-
-### Run
-
-
-```sh
-$ node server.js
-```
-
-
 #APIs
 
 base_url = https://vert-choucroute-93551.herokuapp.com/
