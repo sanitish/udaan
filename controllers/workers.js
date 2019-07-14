@@ -7,10 +7,10 @@ const AllocateTasks = require('../models/allocate_task');
 exports.addWorker = function(req, res, next) {
   const {
     name,
-    skills
+    description
   } = req.body;
-  console.log(skills);
-  if (!name && skills) {
+  console.log(description);
+  if (!name || !description) {
     return res.status(422).send({
       error: 'You should provide info'
     });
@@ -28,7 +28,7 @@ exports.addWorker = function(req, res, next) {
         } else {
           const newWorker = new Worker({
             name: name,
-            skills: skills
+            description: description
           })
           newWorker.save()
             .then((result) => {
