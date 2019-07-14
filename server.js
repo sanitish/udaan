@@ -34,7 +34,7 @@ const workers = require('./routes/worker');
 
 
 var mongoose = require('mongoose');
-const db = "mongodb+srv://nitish:sanitsum@cluster0-fjp4h.mongodb.net/stayspace_prod?retryWrites=true";
+const db = "mongodb+srv://nitish:sanitsum@cluster0-fjp4h.mongodb.net/test?retryWrites=true&w=majority";
 
 
 // Connect to MongoDB
@@ -47,7 +47,7 @@ app.use(express.static('public'));
 
 //load routes
 app.use('/add-worker', workers);
-app.use('/get-tasks-for-worker/:?', workers);
+app.use('/get-tasks-for-worker', workers);
 
  app.use('/add-task', tasks);
  app.use('/add-asset', assets);
