@@ -133,3 +133,8 @@ To start Server
 ```sh
 $ node server.js
 ```
+
+
+#APIs
+
+base_url = http://localhost:8080/
