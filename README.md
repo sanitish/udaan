@@ -135,6 +135,6 @@ $ node server.js
 ```
 
 
-#APIs
+#localhost
 
 base_url = http://localhost:8080/
